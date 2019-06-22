@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HostsManager</title>
+
+    <!-- Load Styles -->
+    <link rel="stylesheet" type="text/css" href="./public/XEIcon/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/commons/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/bootstrap-theme/bootstrap.yeti.min.css">
+
+  </head>
+  <body>
+    <div id='leftSidebar' class='fl'>
+      <div id='label-appname'>HostsManager</div>
+      <div id='wrapper-hosts-single' class='list-leftSidebar'>
+        
+        <div class='box-list-label'>
+          <label class='list-label'>Single  </label><div id='btn-add-single-hosts' class='btn fr btn-primary btn-sm'>
+            <i class="xi-plus-thin xi-x"></i>
+          </div>
+          <div class='cr'></div>
+        </div>
+
+        <div id='list-single' class='list-box'>        
+          <div>Localhost</div>
+          <div>Localhost</div>
+        </div>
+
+      </div><!-- wrapper-hosts-single -->
+
+      
+      <div id='wrapper-hosts-combined' class='list-leftSidebar'>
+          <div class='box-list-label'>
+              <label class='list-label'>Combined  </label><div id='btn-add-single-hosts' class='btn fr btn-primary btn-sm'>
+                <i class="xi-plus-thin xi-x"></i>
+              </div>
+              <div class='cr'></div>
+
+          </div>
+
+
+        <div id='list-combined' class='list-box'>
+            <div>Localhost</div>
+            <div>Localhost</div>
+        </div>
+      </div><!-- wrapper-hosts-combined -->
+    </div>
+    <div id='main-container'>
+
+        <div class="form-group">
+            <textarea id='input-hosts' class="form-control"></textarea>
+        </div>
+
+
+    </div>
+    <div id='footer'>
+      <div id='btn-submit' class='btn btn-primary btn-sm'>적용</div>
+      <div class='cr'></div>
+    </div>
+    <div class='cr'></div>
+    <script>
+      // You can also require other files to run in this process
+      require('./app.js')
+      require('./public/commons/main.js')
+    </script>
+  </body>
+</html>
